@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\galza\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\galza\\.nuget\\packages"
+    ]
+  }
+}

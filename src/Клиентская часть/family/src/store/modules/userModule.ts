@@ -19,14 +19,6 @@ class UserModule extends VuexModule{
     }
 
 
-    @Action ({commit: "messageCommit"})
-    public async getResponse (){
-        const Response = await axios.get("http://127.0.0.1:8000/")
-        return Response.data
-    }
-
-
-
     @Action ({commit: "userCommit"})
     public async CreateAccount (user: User) {
         const response = await axios.post( "account", user);

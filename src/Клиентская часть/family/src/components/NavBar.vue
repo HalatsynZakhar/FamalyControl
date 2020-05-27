@@ -27,6 +27,12 @@
         <li class="nav-item">
             <router-link class="nav-link" to="/signIn">Sign in</router-link>
         </li>
+
+        <li class="nav-item">
+        <router-link class="nav-link" to="/child">
+            <i class="ion-compose"></i>&nbsp;Control
+        </router-link>
+        </li>
     </ul>
     </div>
 </nav>

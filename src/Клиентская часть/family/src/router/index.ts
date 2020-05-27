@@ -41,7 +41,20 @@ const routes: RouteConfig[] = [
     component: () => import(/* webpackChunkName: "about" */ '../components/Auth/SignIn.vue'),
   },
 
+  {
+    path: '/child',
+    name: 'Control',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Control.vue'),
+  },
 
+  {
+    path: '/childs/:id',
+    name: 'ChildDetail',
+    meta: {
+      requiresAuth: true,
+    },
+    component: () => import('../views/ChildDetail.vue')
+  },
 
 ];
 
@@ -52,3 +65,4 @@ const router = new VueRouter({
 });
 
 export default router;
+
